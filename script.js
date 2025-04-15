@@ -10,10 +10,9 @@ async function handleClick(){
 btn.addEventListener("click",()=>{
 	handleClick()
 		.then((e)=>{
-			console.log(e.weather[0].main);
-			// ler result = e.
-			// let div=document.getElementById("weatherData")
-			// div.innerHTML="Current weather in Mumbai: "+result
+			let result = e.weather[0].main
+			let div=document.getElementById("weatherData")
+			div.innerHTML="Current weather in Mumbai: "+result;
 		})
 
 });
